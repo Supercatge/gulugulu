@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>scusa non ho capito</template>
+  </category>
+  
+  <category>
+      <pattern>hello</pattern>
+      <template>ma parla come mangi</template>
+  </category>
+  
+  <category>
+      <pattern>cosa sai fare</pattern>
+      <template>prova a dire<br></br>
+      <random>
+        <li>raccontami una barzelletta</li>
+        <li>dammi un numero</li>
+        <li>testa o croce</li>
+        <li>qual è il link di wikipedia</li>
+        <li>genera un immagine</li>
+      </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>ciao ^</pattern>
+      <template>
+      <random>
+          <li>hola</li>
+           <li>ciao</li>
+            <li>hello</li>
+             <li>sawubona</li>
+      </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>mi chiamo *</pattern>
+      <template>ciao <set name="nome"><star></star></set></template>
+  </category>
+  
+    <category>
+      <pattern>qual è il mio nome</pattern>
+      <template>il tuo nome è <get name="nome" /></template>
+  </category>
+  
+  <category>
+      <pattern>raccontami una barzelletta</pattern>
+      <template>
+           <random>
+          <li>Mi scusi, per andare al cimitero dove devo prendere l'autobus? 
+          In faccia...</li>
+           <li>Ma perché i gatti hanno i canini e i cani non hanno i gattini?</li>
+            <li>La tuta di Batman? La Bat-tuta! :-)</li>
+             <li>Qual è il formaggio servito nei vagoni ristorante? La mozzarella in carrozza.</li>
+      </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>dammi un numero</pattern>
+      <template>
+      <random>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>testa o croce</pattern>
+      <template>
+      <random>
+        <li>testa</li>
+        <li>croce</li>
+      </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>genera un immagine</pattern>
+      <template>
+           <random>
+        <li><image>https://static2-viaggi.corriereobjects.it/wp-content/uploads/2021/01/1-iStock-172467933-1080x747.jpg?v=419555</image></li>
+        <li><image>https://www.viaggiareusa.it/wp-content/uploads/2018/01/grand-canyon.jpg</image></li>
+        <li><image>https://www.nieddittas.it/wp-content/uploads/2021/12/qual-e-il-mare-piu-bello-della-sardegna.jpg</image></li>
+        <li><image>https://www.viaggi-usa.it/wp-content/uploads/2014/12/Cascate-del-Niagara-cosa-vedere-01.jpg</image></li>
+      </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>qual è il link di wikipedia</pattern>
+      <template>
+  <button>
+       <text>wiki</text>
+      <url>https://it.wikipedia.org/wiki/Pagina_principale</url>
+  </button>
+      </template>
+  </category>
+  
+   <category>
+      <pattern>come ti chiami</pattern>
+      <template>mi chiamo asistente gulugulu <set name="nomebot" /></template>
+  </category>
+  <category>
+      <pattern>genera video di gatti</pattern>
+      <template>
+          <button>
+              <text>youtube</text>
+           <random>
+        <li><url>https://www.youtube.com/watch?v=yLftJsyIKak</url></li>
+        <li><url>https://www.youtube.com/watch?v=CBljXSdAhOg</url></li>
+        <li><url>https://www.youtube.com/watch?v=OFBIc-UuJUc</url></li>
+        <li><url>https://www.youtube.com/watch?v=rtrB8BUg6eM</url></li>
+      </random>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>hola</pattern>
+      <template>😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈</template>
+  </category>
+  
+  
+  
+</aiml>
